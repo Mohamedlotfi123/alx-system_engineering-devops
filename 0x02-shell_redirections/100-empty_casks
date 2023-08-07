@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -laR | find -empty
+ls -la | find -empty -printf"\n"
