@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -la | find . -type f -name "*.swp" | cut -d . -f3 | sort -s | sort -f |sort -b
