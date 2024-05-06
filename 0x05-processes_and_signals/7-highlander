@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# A Bash script that displays 'To infinity and beyond' indefinitely
+
+message() {
+	echo "I am invincible!!!"
+}
+while true;
+do
+	trap message SIGTERM
+	echo "To infinity and beyond"
+	sleep 2
+done
