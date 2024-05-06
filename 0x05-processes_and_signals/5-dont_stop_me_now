@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# A Bash script that stops 4-infinity_and_beyond process
+
+id_of_process=$(pgrep -f '4-to_infinity_and_beyond')
+if [[ -n $id_of_process ]]
+then
+	kill "$id_of_process"
+fi
