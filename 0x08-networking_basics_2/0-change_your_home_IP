@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Script that configures an Ubuntu server.
+
+cp /etc/hosts ~/host.new
+sed 'a localname	127.0.0.2'
+sed 'a facebook.com	8.8.8.8'
+cp -f ~/host.new /etc/hosts
