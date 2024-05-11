@@ -2,6 +2,6 @@
 # Script that configures an Ubuntu server.
 
 cp /etc/hosts ~/host.new
-sed 'a localname	127.0.0.2' ~/host.new
+sed 's/localname/localname	127.0.0.2' ~/host.new
 sed 'a facebook.com	8.8.8.8' ~/host.new
 cp -f ~/host.new /etc/hosts
